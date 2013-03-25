@@ -21,7 +21,6 @@ $body.toggleScroll()
 	}
 	Scroll.prototype.init = function(){
 		options.original = $target.scrollTop();
-		console.log(options);
 	}
 
 	Scroll.prototype.toggleScroll = function(){
@@ -33,7 +32,7 @@ $body.toggleScroll()
 
 	Scroll.prototype.destroy = function(){
 		$target = null;//fast to gc
-		//return this;
+		//return this; // need ?
 	}
 
 	$.fn.scroll = function(settings){
